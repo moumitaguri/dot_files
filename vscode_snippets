@@ -1,0 +1,97 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// 
+	//}
+	"console log": {
+		"prefix": "cl",
+		"body": ["console.log(${1:data to print});"],
+		"description": "console.log"
+	},
+
+	"function defintion": {
+		"prefix": "cf",
+		"body": ["const ${1:funcName} = function(${2:args}) {",
+					"	${3:body};",
+					"}"],
+		"description": "define a function"
+	},
+
+	"require functions from a library": {
+		"prefix": "crq",
+		"body": ["const { ${1:requiredName} }",
+			" = require('${2:what to require}');"],
+		"description": "require some library"
+	},
+
+	"require assert": {
+		"prefix": "rast",
+		"body": ["const assert = require('assert');"],
+		"description": "require assert"
+	},
+
+	"require": {
+		"prefix": "req",
+		"body": ["const ${1:name} = require('${1:name}');"],
+		"description": "require assert"
+	},
+
+	"describe": {
+		"prefix": "des",
+		"body": ["describe ('${1:funcName}' , function() {",
+			 "});"]
+		"description": "describe"
+	},
+
+	"it": {
+		"prefix": "it",
+		"body": ["it ('${1:behaviour}' , function() {",
+			 "	${2:inside it};",
+			"});"],
+		"description": "it block"
+	},
+
+	"deepEqual": {
+		"prefix": "deep",
+		"body": ["assert.deepEqual(actualOut, expectedOut)"],
+		"description": "deepEqual"
+	},
+
+	"return": {
+		"prefix": "ret",
+		"body": ["return ${1:something};"],
+		"description": "return"
+	},
+
+	"module": {
+		"prefix": "mod",
+		"body": ["module.exports = { ${1:function} };"],
+		"description": "module"
+	},
+
+	"variable declaration using let or const": {
+		"prefix": "let",
+		"body": ["${1:let} ${2:variableName} = ${3:value};"],
+		"description": "let or const"
+	},
+
+	"arrow-function": {
+		"prefix": "arrow",
+		"body": [
+			"const ${1:functioName}=(${2:args})=>{",
+      "	${3://body}",
+			"};"
+		],
+		"description": "arrow-function"
+	}
+}
